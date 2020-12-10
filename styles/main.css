@@ -1,0 +1,171 @@
+/* GENERICS */
+
+body {
+  margin: 0;
+}
+
+.root {
+  overflow-x: hidden;
+}
+
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@700&family=Raleway:wght@500&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Manjari', sans-serif;
+}
+
+p, button, a {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* BUTTONS */
+
+button {
+  background-color: #00b9ab;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 5rem;;
+}
+
+button.simple {
+  border: 2px solid white;
+  padding: 0.5rem 1rem;
+}
+
+/* HEADER */
+
+header {
+  background-color: #00b9ab;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 5rem;
+  position: relative;
+  z-index: -1;
+}
+
+header img {
+  width: 8rem;
+}
+
+header button {
+  font-size: 1.1rem;
+}
+
+/* SECTIONS */
+
+section {
+  padding: 0 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+section img {
+  display: block;
+  width: 80%;
+  margin: auto;
+  position: relative;
+  top: -13rem;
+}
+
+section button {
+  margin: auto;
+  display: block;
+}
+
+/* -- FIRST */
+
+section.first::before {
+  background: white;
+
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 300vw;
+  height: 10rem;
+  left: -50%;
+  top: -4rem;
+  transform: rotate(-15deg);
+  margin-top: -5rem;
+}
+
+section.first {
+  position: relative;
+}
+
+/* -- SECOND */
+
+section.second::before {
+  background: #00b9ab;
+
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 300vw;
+  height: 10rem;
+  left: -50%;
+  top: -4rem;
+  transform: rotate(-15deg);
+  margin-top: -5rem;
+}
+
+section.second {
+  position: relative;
+  margin-top: 16rem;
+  background-color: #00b9ab;
+  color: white;
+}
+
+section.second p {
+  margin-top: -11em;
+  padding-bottom: 2em;
+}
+
+/* -- THIRD */
+
+section.third::before {
+  background: #00b9ab;
+
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 300vw;
+  height: 13rem;
+  left: -50%;
+  top: -17.5rem;
+  transform: rotate(-15deg);
+  margin-top: -5rem;
+}
+
+section.third {
+  position: relative;
+  margin-top: 16rem;
+  color: #00b9ab;
+}
+
+section.third p {
+  margin-top: -11em;
+  padding-bottom: 2em;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  color: #00b9ab;
+}
+
+footer a {
+  font-weight: bolder;
+  color: #00b9ab;
+  text-decoration: none;
+}
