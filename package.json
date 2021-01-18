@@ -6,9 +6,15 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node ./scripts/minify.js"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn build"
+    }
+  },
   "author": "absolom",
   "license": "ISC",
   "dependencies": {
+    "husky": "^4.3.8",
     "minify": "^6.0.1"
   }
 }
