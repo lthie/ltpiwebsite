@@ -3,17 +3,12 @@
   "version": "1.0.0",
   "description": "ltpi website",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "node ./scripts/minify.js"
-    }
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node ./scripts/minify.js"
   },
   "author": "absolom",
   "license": "ISC",
   "dependencies": {
-    "husky": "^4.3.5",
     "minify": "^6.0.1"
   }
 }
